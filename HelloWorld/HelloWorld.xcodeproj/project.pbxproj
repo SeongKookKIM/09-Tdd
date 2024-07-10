@@ -14,6 +14,7 @@
 		046262292C3E1C7200B70BCC /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046262282C3E1C7200B70BCC /* HelloWorldTests.swift */; };
 		046262332C3E1C7200B70BCC /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046262322C3E1C7200B70BCC /* HelloWorldUITests.swift */; };
 		046262352C3E1C7200B70BCC /* HelloWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046262342C3E1C7200B70BCC /* HelloWorldUITestsLaunchTests.swift */; };
+		046262422C3E294600B70BCC /* SumOfProductsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046262412C3E294600B70BCC /* SumOfProductsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0462622E2C3E1C7200B70BCC /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		046262322C3E1C7200B70BCC /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		046262342C3E1C7200B70BCC /* HelloWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		046262412C3E294600B70BCC /* SumOfProductsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfProductsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				046262282C3E1C7200B70BCC /* HelloWorldTests.swift */,
+				046262412C3E294600B70BCC /* SumOfProductsTests.swift */,
 			);
 			path = HelloWorldTests;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046262422C3E294600B70BCC /* SumOfProductsTests.swift in Sources */,
 				046262292C3E1C7200B70BCC /* HelloWorldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
