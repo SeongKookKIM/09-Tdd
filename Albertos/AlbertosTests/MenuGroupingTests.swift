@@ -15,7 +15,13 @@ final class MenuGroupingTests: XCTestCase {
     }
     
     func testMenuWithManyCategoriesReturnOneSection() {
-        
+        // 메뉴아아템이 동일한 카테고리를 같는 경우 하나의 섹션으로 구분
+        let menu = [
+            MenuItem(category: "pastas"),
+            MenuItem(category: "pastas"),
+        ]
+        let sections = groupMenuByCategory(menu)
+        XCTAssertEqual(sections.count, 1)
     }
     
     func testEmptyMenuReturnsEmptySections() {
