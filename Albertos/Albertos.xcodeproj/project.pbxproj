@@ -26,6 +26,7 @@
 		046EFD292C3F77E700051AEC /* MenuList.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD282C3F77E700051AEC /* MenuList.ViewModel.swift */; };
 		046EFD2B2C3F931C00051AEC /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD2A2C3F931C00051AEC /* MenuFetching.swift */; };
 		046EFD2D2C3F947100051AEC /* MenuFetchingSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD2C2C3F947100051AEC /* MenuFetchingSample.swift */; };
+		046EFD2F2C3FA8E300051AEC /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD2E2C3FA8E300051AEC /* MenuFetchingStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		046EFD282C3F77E700051AEC /* MenuList.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.ViewModel.swift; sourceTree = "<group>"; };
 		046EFD2A2C3F931C00051AEC /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
 		046EFD2C2C3F947100051AEC /* MenuFetchingSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingSample.swift; sourceTree = "<group>"; };
+		046EFD2E2C3FA8E300051AEC /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				046EFD1E2C3F686700051AEC /* MenuSection+Fixture.swift */,
 				046EFD222C3F6D3E00051AEC /* MenuRowViewModelTests.swift */,
 				046EFD262C3F758A00051AEC /* MenuListViewModelTests.swift */,
+				046EFD2E2C3FA8E300051AEC /* MenuFetchingStub.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				046EFD1D2C3F5FA500051AEC /* MenuItem+Fixture.swift in Sources */,
 				046EFD232C3F6D3E00051AEC /* MenuRowViewModelTests.swift in Sources */,
 				046262612C3E406700B70BCC /* MenuGroupingTests.swift in Sources */,
+				046EFD2F2C3FA8E300051AEC /* MenuFetchingStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
