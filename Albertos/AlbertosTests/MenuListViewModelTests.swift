@@ -12,24 +12,26 @@ import Combine
 final class MenuListViewModelTests: XCTestCase {
     
     private var cancellables = Set<AnyCancellable>()
-    /*
-     func testCallsGivenGroupingFunction() {
-     var called = false
-     let inputSections = [MenuSection.fixture()]
-     let probeClosure: ([MenuItem]) -> [MenuSection] = { _ in
-     called = true
-     return inputSections
-     }
-     
-     let viewModel = MenuList.ViewModel(menu: [.fixture()], menuGrouping: probeClosure)
-     let sections = viewModel.sections
-     
-     // Check that the given closure was called
-     XCTAssertTrue(called)
-     // Check that the returned value was build with the closure
-     XCTAssertEqual(sections, inputSections)
-     }
-     */
+    
+    func testCallsGivenGroupingFunction() throws {
+        try XCTSkipIf(true, "Skip")
+        
+        var called = false
+        let inputSections = [MenuSection.fixture()]
+        let probeClosure: ([MenuItem]) -> [MenuSection] = { _ in
+            called = true
+            return inputSections
+        }
+        
+        // let viewModel = MenuList.ViewModel(menu: [.fixture()], menuGrouping: probeClosure)
+        // let sections = viewModel.sections
+        
+        // Check that the given closure was called
+        // XCTAssertTrue(called)
+        // Check that the returned value was build with the closure
+        // XCTAssertEqual(sections, inputSections)
+    }
+    
     func testWhenFetchingStartsPublishesEmptyMenu() {
         let viewModel = MenuList.ViewModel()
         XCTAssertTrue(viewModel.sections.isEmpty)
