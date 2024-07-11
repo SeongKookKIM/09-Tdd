@@ -12,7 +12,7 @@ extension MenuRow {
         let text: String
         
         init(item: MenuItem) {
-            self.text = item.name
+            self.text = item.spicy ? "\(item.name) (매운맛)" : item.name
         }
     }
 }
