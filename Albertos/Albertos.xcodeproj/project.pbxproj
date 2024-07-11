@@ -16,6 +16,8 @@
 		0462626D2C3E406700B70BCC /* AlbertosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462626C2C3E406700B70BCC /* AlbertosUITestsLaunchTests.swift */; };
 		0462627A2C3E42D300B70BCC /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046262792C3E42D300B70BCC /* MenuItem.swift */; };
 		0462627C2C3E42EB00B70BCC /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0462627B2C3E42EB00B70BCC /* MenuSection.swift */; };
+		046EFD1B2C3F5F7E00051AEC /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD1A2C3F5F7E00051AEC /* Array+Safe.swift */; };
+		046EFD1D2C3F5FA500051AEC /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD1C2C3F5FA500051AEC /* MenuItem+Fixture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		0462626C2C3E406700B70BCC /* AlbertosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		046262792C3E42D300B70BCC /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		0462627B2C3E42EB00B70BCC /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		046EFD1A2C3F5F7E00051AEC /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		046EFD1C2C3F5FA500051AEC /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				046262602C3E406700B70BCC /* MenuGroupingTests.swift */,
+				046EFD1C2C3F5FA500051AEC /* MenuItem+Fixture.swift */,
+				046EFD1A2C3F5F7E00051AEC /* Array+Safe.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -274,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046EFD1B2C3F5F7E00051AEC /* Array+Safe.swift in Sources */,
+				046EFD1D2C3F5FA500051AEC /* MenuItem+Fixture.swift in Sources */,
 				046262612C3E406700B70BCC /* MenuGroupingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
