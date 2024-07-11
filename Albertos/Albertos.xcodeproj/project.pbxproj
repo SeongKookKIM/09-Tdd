@@ -116,8 +116,8 @@
 			children = (
 				0462624F2C3E406400B70BCC /* AlbertosApp.swift */,
 				046262512C3E406400B70BCC /* MenuList.swift */,
-				046EFD202C3F6CE500051AEC /* MenuRow.swift */,
 				046EFD282C3F77E700051AEC /* MenuList.ViewModel.swift */,
+				046EFD202C3F6CE500051AEC /* MenuRow.swift */,
 				046EFD242C3F6E3400051AEC /* MenuRow.ViewModel.swift */,
 				046262532C3E406600B70BCC /* Assets.xcassets */,
 				046262552C3E406600B70BCC /* Preview Content */,
