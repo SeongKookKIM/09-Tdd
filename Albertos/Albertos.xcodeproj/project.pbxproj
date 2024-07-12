@@ -29,6 +29,7 @@
 		046EFD2F2C3FA8E300051AEC /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD2E2C3FA8E300051AEC /* MenuFetchingStub.swift */; };
 		046EFD312C40AC6B00051AEC /* MenuItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD302C40AC6B00051AEC /* MenuItemTests.swift */; };
 		046EFD332C40B07700051AEC /* menu_Item.json in Resources */ = {isa = PBXBuildFile; fileRef = 046EFD322C40B07700051AEC /* menu_Item.json */; };
+		046EFD352C40B2FB00051AEC /* XCTestCase+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD342C40B2FB00051AEC /* XCTestCase+JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		046EFD2E2C3FA8E300051AEC /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
 		046EFD302C40AC6B00051AEC /* MenuItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTests.swift; sourceTree = "<group>"; };
 		046EFD322C40B07700051AEC /* menu_Item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu_Item.json; sourceTree = "<group>"; };
+		046EFD342C40B2FB00051AEC /* XCTestCase+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				046EFD262C3F758A00051AEC /* MenuListViewModelTests.swift */,
 				046EFD2E2C3FA8E300051AEC /* MenuFetchingStub.swift */,
 				046EFD302C40AC6B00051AEC /* MenuItemTests.swift */,
+				046EFD342C40B2FB00051AEC /* XCTestCase+JSON.swift */,
 				046EFD322C40B07700051AEC /* menu_Item.json */,
 			);
 			path = AlbertosTests;
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046EFD352C40B2FB00051AEC /* XCTestCase+JSON.swift in Sources */,
 				046EFD1F2C3F686700051AEC /* MenuSection+Fixture.swift in Sources */,
 				046EFD272C3F758A00051AEC /* MenuListViewModelTests.swift in Sources */,
 				046EFD1B2C3F5F7E00051AEC /* Array+Safe.swift in Sources */,
