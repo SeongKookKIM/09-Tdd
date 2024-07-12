@@ -2,14 +2,13 @@
 //  MenuFetcher.swift
 //  Albertos
 //
-//  Created by SeongKook on 7/12/24.
+//  Created by Jungman Bae on 7/12/24.
 //
 
 import Foundation
 import Combine
 
 class MenuFetcher: MenuFetching {
-    
     let networkFetching: NetworkFetching
     init(networkFetching: NetworkFetching) {
         self.networkFetching = networkFetching

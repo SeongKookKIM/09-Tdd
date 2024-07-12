@@ -32,6 +32,9 @@
 		046EFD352C40B2FB00051AEC /* XCTestCase+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD342C40B2FB00051AEC /* XCTestCase+JSON.swift */; };
 		046EFD372C40BB4000051AEC /* MenuFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD362C40BB4000051AEC /* MenuFetcherTests.swift */; };
 		046EFD392C40BBDA00051AEC /* MenuFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD382C40BBDA00051AEC /* MenuFetcher.swift */; };
+		046EFD3B2C40C00F00051AEC /* NetworkFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD3A2C40C00F00051AEC /* NetworkFetching.swift */; };
+		046EFD3D2C40C07A00051AEC /* URLSession+NetworkFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD3C2C40C07A00051AEC /* URLSession+NetworkFetching.swift */; };
+		046EFD3F2C40C1FB00051AEC /* NetworkFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046EFD3E2C40C1FB00051AEC /* NetworkFetchingStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		046EFD342C40B2FB00051AEC /* XCTestCase+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+JSON.swift"; sourceTree = "<group>"; };
 		046EFD362C40BB4000051AEC /* MenuFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetcherTests.swift; sourceTree = "<group>"; };
 		046EFD382C40BBDA00051AEC /* MenuFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetcher.swift; sourceTree = "<group>"; };
+		046EFD3A2C40C00F00051AEC /* NetworkFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetching.swift; sourceTree = "<group>"; };
+		046EFD3C2C40C07A00051AEC /* URLSession+NetworkFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+NetworkFetching.swift"; sourceTree = "<group>"; };
+		046EFD3E2C40C1FB00051AEC /* NetworkFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,8 @@
 				046EFD2A2C3F931C00051AEC /* MenuFetching.swift */,
 				046EFD2C2C3F947100051AEC /* MenuFetchingSample.swift */,
 				046EFD382C40BBDA00051AEC /* MenuFetcher.swift */,
+				046EFD3A2C40C00F00051AEC /* NetworkFetching.swift */,
+				046EFD3C2C40C07A00051AEC /* URLSession+NetworkFetching.swift */,
 				046262532C3E406600B70BCC /* Assets.xcassets */,
 				046262552C3E406600B70BCC /* Preview Content */,
 				046262792C3E42D300B70BCC /* MenuItem.swift */,
@@ -168,6 +176,7 @@
 				046EFD322C40B07700051AEC /* menu_Item.json */,
 				046EFD342C40B2FB00051AEC /* XCTestCase+JSON.swift */,
 				046EFD362C40BB4000051AEC /* MenuFetcherTests.swift */,
+				046EFD3E2C40C1FB00051AEC /* NetworkFetchingStub.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -314,8 +323,10 @@
 			files = (
 				046EFD392C40BBDA00051AEC /* MenuFetcher.swift in Sources */,
 				046EFD292C3F77E700051AEC /* MenuList.ViewModel.swift in Sources */,
+				046EFD3D2C40C07A00051AEC /* URLSession+NetworkFetching.swift in Sources */,
 				0462627A2C3E42D300B70BCC /* MenuItem.swift in Sources */,
 				046EFD2B2C3F931C00051AEC /* MenuFetching.swift in Sources */,
+				046EFD3B2C40C00F00051AEC /* NetworkFetching.swift in Sources */,
 				046262522C3E406400B70BCC /* MenuList.swift in Sources */,
 				0462627C2C3E42EB00B70BCC /* MenuSection.swift in Sources */,
 				046EFD252C3F6E3400051AEC /* MenuRow.ViewModel.swift in Sources */,
@@ -331,6 +342,7 @@
 			files = (
 				046EFD372C40BB4000051AEC /* MenuFetcherTests.swift in Sources */,
 				046EFD352C40B2FB00051AEC /* XCTestCase+JSON.swift in Sources */,
+				046EFD3F2C40C1FB00051AEC /* NetworkFetchingStub.swift in Sources */,
 				046EFD1F2C3F686700051AEC /* MenuSection+Fixture.swift in Sources */,
 				046EFD272C3F758A00051AEC /* MenuListViewModelTests.swift in Sources */,
 				046EFD1B2C3F5F7E00051AEC /* Array+Safe.swift in Sources */,

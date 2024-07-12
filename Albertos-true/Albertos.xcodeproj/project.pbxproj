@@ -1,0 +1,1260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3705AE0E2C3E4062006FB385 /* AlbertosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3705AE0D2C3E4062006FB385 /* AlbertosApp.swift */; };
+		3705AE102C3E4062006FB385 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3705AE0F2C3E4062006FB385 /* MenuList.swift */; };
+		3705AE122C3E4063006FB385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3705AE112C3E4063006FB385 /* Assets.xcassets */; };
+		3705AE152C3E4063006FB385 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3705AE142C3E4063006FB385 /* Preview Assets.xcassets */; };
+		3705AE1F2C3E4064006FB385 /* MenuGroupingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3705AE1E2C3E4064006FB385 /* MenuGroupingTests.swift */; };
+		3705AE292C3E4064006FB385 /* AlbertosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3705AE282C3E4064006FB385 /* AlbertosUITests.swift */; };
+		3705AE2B2C3E4064006FB385 /* AlbertosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3705AE2A2C3E4064006FB385 /* AlbertosUITestsLaunchTests.swift */; };
+		3705AE382C3E42CE006FB385 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3705AE372C3E42CE006FB385 /* MenuItem.swift */; };
+		3705AE3A2C3E42EA006FB385 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3705AE392C3E42EA006FB385 /* MenuSection.swift */; };
+		3707A7512C40AC48006AC7C2 /* MenuItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7502C40AC48006AC7C2 /* MenuItemTests.swift */; };
+		3707A7532C40B074006AC7C2 /* menu_item.json in Resources */ = {isa = PBXBuildFile; fileRef = 3707A7522C40B074006AC7C2 /* menu_item.json */; };
+		3707A7552C40B2F1006AC7C2 /* XCTestCase+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7542C40B2F1006AC7C2 /* XCTestCase+JSON.swift */; };
+		3707A7572C40BB40006AC7C2 /* MenuFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7562C40BB40006AC7C2 /* MenuFetcherTests.swift */; };
+		3707A7592C40BBC0006AC7C2 /* MenuFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7582C40BBC0006AC7C2 /* MenuFetcher.swift */; };
+		3707A75B2C40C00D006AC7C2 /* NetworkFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A75A2C40C00D006AC7C2 /* NetworkFetching.swift */; };
+		3707A75D2C40C07B006AC7C2 /* URLSession+NetworkFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A75C2C40C07B006AC7C2 /* URLSession+NetworkFetching.swift */; };
+		3707A75F2C40C1DD006AC7C2 /* NetworkFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A75E2C40C1DD006AC7C2 /* NetworkFetchingStub.swift */; };
+		3707A7612C40C8E2006AC7C2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7602C40C8E2006AC7C2 /* Order.swift */; };
+		3707A7632C40CA7E006AC7C2 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7622C40CA7E006AC7C2 /* OrderController.swift */; };
+		3707A7652C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7642C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift */; };
+		3707A7672C40CF63006AC7C2 /* MenuItemDetail.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7662C40CF63006AC7C2 /* MenuItemDetail.ViewModel.swift */; };
+		3707A76B2C40E410006AC7C2 /* MenuItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A76A2C40E410006AC7C2 /* MenuItemDetail.swift */; };
+		372AB7642C3F5F79009C7758 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7632C3F5F79009C7758 /* Array+Safe.swift */; };
+		372AB7662C3F5F9B009C7758 /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7652C3F5F9B009C7758 /* MenuItem+Fixture.swift */; };
+		372AB7682C3F6829009C7758 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7672C3F6829009C7758 /* MenuSection+Fixture.swift */; };
+		372AB76C2C3F6CC4009C7758 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB76B2C3F6CC4009C7758 /* MenuRow.swift */; };
+		372AB76E2C3F6D30009C7758 /* MenuRowViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB76D2C3F6D30009C7758 /* MenuRowViewModelTests.swift */; };
+		372AB7702C3F6E28009C7758 /* MenuRow.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB76F2C3F6E28009C7758 /* MenuRow.ViewModel.swift */; };
+		372AB7722C3F757D009C7758 /* MenuListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7712C3F757D009C7758 /* MenuListViewModelTests.swift */; };
+		372AB7742C3F77E7009C7758 /* MenuList.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7732C3F77E7009C7758 /* MenuList.ViewModel.swift */; };
+		372AB7762C3F9316009C7758 /* MenuFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7752C3F9316009C7758 /* MenuFetching.swift */; };
+		372AB77A2C3FA8D4009C7758 /* MenuFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7792C3FA8D4009C7758 /* MenuFetchingStub.swift */; };
+		3754DAC82C40F1070076FAF6 /* OrderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DAC72C40F1070076FAF6 /* OrderTest.swift */; };
+		3754DACA2C40F1120076FAF6 /* OrderControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DAC92C40F1120076FAF6 /* OrderControllerTests.swift */; };
+		3754DADD2C40F7E40076FAF6 /* OrderButton.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DADB2C40F7E40076FAF6 /* OrderButton.ViewModel.swift */; };
+		3754DADE2C40F7E40076FAF6 /* OrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DADC2C40F7E40076FAF6 /* OrderButton.swift */; };
+		3754DAF52C40F9D30076FAF6 /* PaymentProcessingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DAF32C40F9D30076FAF6 /* PaymentProcessingProxy.swift */; };
+		3754DAF62C40F9D30076FAF6 /* PaymentProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DAF42C40F9D30076FAF6 /* PaymentProcessing.swift */; };
+		3754DAFF2C40FA140076FAF6 /* HippoAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 3754DAFE2C40FA140076FAF6 /* HippoAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3754DB022C40FA140076FAF6 /* HippoAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3754DAFC2C40FA140076FAF6 /* HippoAnalytics.framework */; };
+		3754DB032C40FA140076FAF6 /* HippoAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3754DAFC2C40FA140076FAF6 /* HippoAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3754DB102C40FA310076FAF6 /* HippoPayments.h in Headers */ = {isa = PBXBuildFile; fileRef = 3754DB0F2C40FA310076FAF6 /* HippoPayments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3754DB132C40FA310076FAF6 /* HippoPayments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3754DB0D2C40FA310076FAF6 /* HippoPayments.framework */; };
+		3754DB142C40FA310076FAF6 /* HippoPayments.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3754DB0D2C40FA310076FAF6 /* HippoPayments.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3754DB182C40FA3E0076FAF6 /* HippoPaymentsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DAE52C40F8660076FAF6 /* HippoPaymentsError.swift */; };
+		3754DB192C40FA3E0076FAF6 /* HippoPaymentsConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DAE42C40F8660076FAF6 /* HippoPaymentsConfirmationViewController.swift */; };
+		3754DB1A2C40FA3E0076FAF6 /* HippoPaymentsProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DAE62C40F8660076FAF6 /* HippoPaymentsProcessor.swift */; };
+		3754DB1B2C40FA3E0076FAF6 /* UIViewController+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DAE82C40F8660076FAF6 /* UIViewController+Presentation.swift */; };
+		3754DB1C2C40FA570076FAF6 /* HippoAnalyticsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DAE02C40F8650076FAF6 /* HippoAnalyticsClient.swift */; };
+		3754DB1F2C40FAE30076FAF6 /* OrderDetail.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB1D2C40FAE20076FAF6 /* OrderDetail.ViewModel.swift */; };
+		3754DB202C40FAE30076FAF6 /* OrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB1E2C40FAE20076FAF6 /* OrderDetail.swift */; };
+		3754DB222C40FB5A0076FAF6 /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB212C40FB5A0076FAF6 /* Color+Custom.swift */; };
+		3754DB242C40FEF00076FAF6 /* HippoPaymentsProcessor+PaymentProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB232C40FEF00076FAF6 /* HippoPaymentsProcessor+PaymentProcessing.swift */; };
+		3754DB262C40FF450076FAF6 /* Order+HippoPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB252C40FF450076FAF6 /* Order+HippoPayments.swift */; };
+		3754DB292C41025E0076FAF6 /* PaymentProcessingSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */; };
+		3754DB2B2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */; };
+		3754DB2D2C4106CE0076FAF6 /* Alert.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB2C2C4106CD0076FAF6 /* Alert.ViewModel.swift */; };
+		3754DB2F2C41085D0076FAF6 /* PaymentProcessingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB2E2C41085D0076FAF6 /* PaymentProcessingStub.swift */; };
+		3754DB312C4109160076FAF6 /* XCTestCase+Timeouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB302C4109160076FAF6 /* XCTestCase+Timeouts.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3705AE1B2C3E4064006FB385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3705AE022C3E4062006FB385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3705AE092C3E4062006FB385;
+			remoteInfo = Albertos;
+		};
+		3705AE252C3E4064006FB385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3705AE022C3E4062006FB385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3705AE092C3E4062006FB385;
+			remoteInfo = Albertos;
+		};
+		3754DB002C40FA140076FAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3705AE022C3E4062006FB385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3754DAFB2C40FA140076FAF6;
+			remoteInfo = HippoAnalytics;
+		};
+		3754DB112C40FA310076FAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3705AE022C3E4062006FB385 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3754DB0C2C40FA310076FAF6;
+			remoteInfo = HippoPayments;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3754DB072C40FA140076FAF6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3754DB142C40FA310076FAF6 /* HippoPayments.framework in Embed Frameworks */,
+				3754DB032C40FA140076FAF6 /* HippoAnalytics.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3705AE0A2C3E4062006FB385 /* Albertos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Albertos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3705AE0D2C3E4062006FB385 /* AlbertosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosApp.swift; sourceTree = "<group>"; };
+		3705AE0F2C3E4062006FB385 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		3705AE112C3E4063006FB385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3705AE142C3E4063006FB385 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3705AE1A2C3E4064006FB385 /* AlbertosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3705AE1E2C3E4064006FB385 /* MenuGroupingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGroupingTests.swift; sourceTree = "<group>"; };
+		3705AE242C3E4064006FB385 /* AlbertosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbertosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3705AE282C3E4064006FB385 /* AlbertosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosUITests.swift; sourceTree = "<group>"; };
+		3705AE2A2C3E4064006FB385 /* AlbertosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbertosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3705AE372C3E42CE006FB385 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		3705AE392C3E42EA006FB385 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		3707A7502C40AC48006AC7C2 /* MenuItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTests.swift; sourceTree = "<group>"; };
+		3707A7522C40B074006AC7C2 /* menu_item.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu_item.json; sourceTree = "<group>"; };
+		3707A7542C40B2F1006AC7C2 /* XCTestCase+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+JSON.swift"; sourceTree = "<group>"; };
+		3707A7562C40BB40006AC7C2 /* MenuFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetcherTests.swift; sourceTree = "<group>"; };
+		3707A7582C40BBC0006AC7C2 /* MenuFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetcher.swift; sourceTree = "<group>"; };
+		3707A75A2C40C00D006AC7C2 /* NetworkFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetching.swift; sourceTree = "<group>"; };
+		3707A75C2C40C07B006AC7C2 /* URLSession+NetworkFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+NetworkFetching.swift"; sourceTree = "<group>"; };
+		3707A75E2C40C1DD006AC7C2 /* NetworkFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingStub.swift; sourceTree = "<group>"; };
+		3707A7602C40C8E2006AC7C2 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		3707A7622C40CA7E006AC7C2 /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
+		3707A7642C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewModelTests.swift; sourceTree = "<group>"; };
+		3707A7662C40CF63006AC7C2 /* MenuItemDetail.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetail.ViewModel.swift; sourceTree = "<group>"; };
+		3707A76A2C40E410006AC7C2 /* MenuItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetail.swift; sourceTree = "<group>"; };
+		372AB7632C3F5F79009C7758 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		372AB7652C3F5F9B009C7758 /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
+		372AB7672C3F6829009C7758 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
+		372AB76B2C3F6CC4009C7758 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		372AB76D2C3F6D30009C7758 /* MenuRowViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowViewModelTests.swift; sourceTree = "<group>"; };
+		372AB76F2C3F6E28009C7758 /* MenuRow.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.ViewModel.swift; sourceTree = "<group>"; };
+		372AB7712C3F757D009C7758 /* MenuListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModelTests.swift; sourceTree = "<group>"; };
+		372AB7732C3F77E7009C7758 /* MenuList.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.ViewModel.swift; sourceTree = "<group>"; };
+		372AB7752C3F9316009C7758 /* MenuFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetching.swift; sourceTree = "<group>"; };
+		372AB7792C3FA8D4009C7758 /* MenuFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFetchingStub.swift; sourceTree = "<group>"; };
+		3754DAC72C40F1070076FAF6 /* OrderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTest.swift; sourceTree = "<group>"; };
+		3754DAC92C40F1120076FAF6 /* OrderControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderControllerTests.swift; sourceTree = "<group>"; };
+		3754DADB2C40F7E40076FAF6 /* OrderButton.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderButton.ViewModel.swift; sourceTree = "<group>"; };
+		3754DADC2C40F7E40076FAF6 /* OrderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderButton.swift; sourceTree = "<group>"; };
+		3754DAE02C40F8650076FAF6 /* HippoAnalyticsClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HippoAnalyticsClient.swift; sourceTree = "<group>"; };
+		3754DAE42C40F8660076FAF6 /* HippoPaymentsConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HippoPaymentsConfirmationViewController.swift; sourceTree = "<group>"; };
+		3754DAE52C40F8660076FAF6 /* HippoPaymentsError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HippoPaymentsError.swift; sourceTree = "<group>"; };
+		3754DAE62C40F8660076FAF6 /* HippoPaymentsProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HippoPaymentsProcessor.swift; sourceTree = "<group>"; };
+		3754DAE82C40F8660076FAF6 /* UIViewController+Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presentation.swift"; sourceTree = "<group>"; };
+		3754DAF32C40F9D30076FAF6 /* PaymentProcessingProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentProcessingProxy.swift; sourceTree = "<group>"; };
+		3754DAF42C40F9D30076FAF6 /* PaymentProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentProcessing.swift; sourceTree = "<group>"; };
+		3754DAFC2C40FA140076FAF6 /* HippoAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HippoAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3754DAFE2C40FA140076FAF6 /* HippoAnalytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HippoAnalytics.h; sourceTree = "<group>"; };
+		3754DB0D2C40FA310076FAF6 /* HippoPayments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HippoPayments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3754DB0F2C40FA310076FAF6 /* HippoPayments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HippoPayments.h; sourceTree = "<group>"; };
+		3754DB1D2C40FAE20076FAF6 /* OrderDetail.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetail.ViewModel.swift; sourceTree = "<group>"; };
+		3754DB1E2C40FAE20076FAF6 /* OrderDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetail.swift; sourceTree = "<group>"; };
+		3754DB212C40FB5A0076FAF6 /* Color+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
+		3754DB232C40FEF00076FAF6 /* HippoPaymentsProcessor+PaymentProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HippoPaymentsProcessor+PaymentProcessing.swift"; sourceTree = "<group>"; };
+		3754DB252C40FF450076FAF6 /* Order+HippoPayments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+HippoPayments.swift"; sourceTree = "<group>"; };
+		3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProcessingSpy.swift; sourceTree = "<group>"; };
+		3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModelTests.swift; sourceTree = "<group>"; };
+		3754DB2C2C4106CD0076FAF6 /* Alert.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.ViewModel.swift; sourceTree = "<group>"; };
+		3754DB2E2C41085D0076FAF6 /* PaymentProcessingStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentProcessingStub.swift; sourceTree = "<group>"; };
+		3754DB302C4109160076FAF6 /* XCTestCase+Timeouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Timeouts.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3705AE072C3E4062006FB385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3754DB132C40FA310076FAF6 /* HippoPayments.framework in Frameworks */,
+				3754DB022C40FA140076FAF6 /* HippoAnalytics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3705AE172C3E4064006FB385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3705AE212C3E4064006FB385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3754DAF92C40FA140076FAF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3754DB0A2C40FA310076FAF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3705AE012C3E4062006FB385 = {
+			isa = PBXGroup;
+			children = (
+				3705AE0C2C3E4062006FB385 /* Albertos */,
+				3705AE1D2C3E4064006FB385 /* AlbertosTests */,
+				3705AE272C3E4064006FB385 /* AlbertosUITests */,
+				3754DAFD2C40FA140076FAF6 /* HippoAnalytics */,
+				3754DB0E2C40FA310076FAF6 /* HippoPayments */,
+				3705AE0B2C3E4062006FB385 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3705AE0B2C3E4062006FB385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3705AE0A2C3E4062006FB385 /* Albertos.app */,
+				3705AE1A2C3E4064006FB385 /* AlbertosTests.xctest */,
+				3705AE242C3E4064006FB385 /* AlbertosUITests.xctest */,
+				3754DAFC2C40FA140076FAF6 /* HippoAnalytics.framework */,
+				3754DB0D2C40FA310076FAF6 /* HippoPayments.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3705AE0C2C3E4062006FB385 /* Albertos */ = {
+			isa = PBXGroup;
+			children = (
+				3705AE0D2C3E4062006FB385 /* AlbertosApp.swift */,
+				3754DB212C40FB5A0076FAF6 /* Color+Custom.swift */,
+				3754DAF22C40F9B70076FAF6 /* Payments */,
+				3754DACB2C40F3F40076FAF6 /* Networks */,
+				3754DACD2C40F41F0076FAF6 /* Models */,
+				3754DACE2C40F4430076FAF6 /* Controllers */,
+				3754DAD02C40F4720076FAF6 /* Views */,
+				3705AE112C3E4063006FB385 /* Assets.xcassets */,
+				3705AE132C3E4063006FB385 /* Preview Content */,
+			);
+			path = Albertos;
+			sourceTree = "<group>";
+		};
+		3705AE132C3E4063006FB385 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3705AE142C3E4063006FB385 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3705AE1D2C3E4064006FB385 /* AlbertosTests */ = {
+			isa = PBXGroup;
+			children = (
+				3754DAD32C40F4D00076FAF6 /* Commons */,
+				3754DAD12C40F4A50076FAF6 /* Stubs */,
+				3754DB272C4102340076FAF6 /* Spy */,
+				3754DAD22C40F4B30076FAF6 /* Fixtures */,
+				3754DAD42C40F4E80076FAF6 /* Resources */,
+				3754DAD82C40F5300076FAF6 /* NetworksTests */,
+				3754DAD62C40F5180076FAF6 /* ModelsTests */,
+				3754DAD52C40F5030076FAF6 /* ViewModelsTests */,
+				3754DAD72C40F52B0076FAF6 /* ControllersTests */,
+			);
+			path = AlbertosTests;
+			sourceTree = "<group>";
+		};
+		3705AE272C3E4064006FB385 /* AlbertosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3705AE282C3E4064006FB385 /* AlbertosUITests.swift */,
+				3705AE2A2C3E4064006FB385 /* AlbertosUITestsLaunchTests.swift */,
+			);
+			path = AlbertosUITests;
+			sourceTree = "<group>";
+		};
+		3754DACB2C40F3F40076FAF6 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				372AB7752C3F9316009C7758 /* MenuFetching.swift */,
+				3707A7582C40BBC0006AC7C2 /* MenuFetcher.swift */,
+				3707A75A2C40C00D006AC7C2 /* NetworkFetching.swift */,
+				3707A75C2C40C07B006AC7C2 /* URLSession+NetworkFetching.swift */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		3754DACC2C40F4040076FAF6 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				3705AE0F2C3E4062006FB385 /* MenuList.swift */,
+				372AB7732C3F77E7009C7758 /* MenuList.ViewModel.swift */,
+				372AB76B2C3F6CC4009C7758 /* MenuRow.swift */,
+				372AB76F2C3F6E28009C7758 /* MenuRow.ViewModel.swift */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		3754DACD2C40F41F0076FAF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3705AE372C3E42CE006FB385 /* MenuItem.swift */,
+				3705AE392C3E42EA006FB385 /* MenuSection.swift */,
+				3707A7602C40C8E2006AC7C2 /* Order.swift */,
+				3754DB252C40FF450076FAF6 /* Order+HippoPayments.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3754DACE2C40F4430076FAF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3707A7622C40CA7E006AC7C2 /* OrderController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3754DACF2C40F4630076FAF6 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3707A7662C40CF63006AC7C2 /* MenuItemDetail.ViewModel.swift */,
+				3707A76A2C40E410006AC7C2 /* MenuItemDetail.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		3754DAD02C40F4720076FAF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3754DADA2C40F7C60076FAF6 /* OrderButton */,
+				3754DAD92C40F7900076FAF6 /* OrderDetailView */,
+				3754DACF2C40F4630076FAF6 /* DetailView */,
+				3754DACC2C40F4040076FAF6 /* ListView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3754DAD12C40F4A50076FAF6 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				372AB7792C3FA8D4009C7758 /* MenuFetchingStub.swift */,
+				3707A75E2C40C1DD006AC7C2 /* NetworkFetchingStub.swift */,
+				3754DB2E2C41085D0076FAF6 /* PaymentProcessingStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		3754DAD22C40F4B30076FAF6 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				372AB7652C3F5F9B009C7758 /* MenuItem+Fixture.swift */,
+				372AB7672C3F6829009C7758 /* MenuSection+Fixture.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		3754DAD32C40F4D00076FAF6 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				372AB7632C3F5F79009C7758 /* Array+Safe.swift */,
+				3707A7542C40B2F1006AC7C2 /* XCTestCase+JSON.swift */,
+				3754DB302C4109160076FAF6 /* XCTestCase+Timeouts.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		3754DAD42C40F4E80076FAF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3707A7522C40B074006AC7C2 /* menu_item.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3754DAD52C40F5030076FAF6 /* ViewModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				372AB76D2C3F6D30009C7758 /* MenuRowViewModelTests.swift */,
+				372AB7712C3F757D009C7758 /* MenuListViewModelTests.swift */,
+				3707A7642C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift */,
+				3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */,
+			);
+			path = ViewModelsTests;
+			sourceTree = "<group>";
+		};
+		3754DAD62C40F5180076FAF6 /* ModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3705AE1E2C3E4064006FB385 /* MenuGroupingTests.swift */,
+				3707A7502C40AC48006AC7C2 /* MenuItemTests.swift */,
+				3754DAC72C40F1070076FAF6 /* OrderTest.swift */,
+			);
+			path = ModelsTests;
+			sourceTree = "<group>";
+		};
+		3754DAD72C40F52B0076FAF6 /* ControllersTests */ = {
+			isa = PBXGroup;
+			children = (
+				3754DAC92C40F1120076FAF6 /* OrderControllerTests.swift */,
+			);
+			path = ControllersTests;
+			sourceTree = "<group>";
+		};
+		3754DAD82C40F5300076FAF6 /* NetworksTests */ = {
+			isa = PBXGroup;
+			children = (
+				3707A7562C40BB40006AC7C2 /* MenuFetcherTests.swift */,
+			);
+			path = NetworksTests;
+			sourceTree = "<group>";
+		};
+		3754DAD92C40F7900076FAF6 /* OrderDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3754DB2C2C4106CD0076FAF6 /* Alert.ViewModel.swift */,
+				3754DB1E2C40FAE20076FAF6 /* OrderDetail.swift */,
+				3754DB1D2C40FAE20076FAF6 /* OrderDetail.ViewModel.swift */,
+			);
+			path = OrderDetailView;
+			sourceTree = "<group>";
+		};
+		3754DADA2C40F7C60076FAF6 /* OrderButton */ = {
+			isa = PBXGroup;
+			children = (
+				3754DADC2C40F7E40076FAF6 /* OrderButton.swift */,
+				3754DADB2C40F7E40076FAF6 /* OrderButton.ViewModel.swift */,
+			);
+			path = OrderButton;
+			sourceTree = "<group>";
+		};
+		3754DAF22C40F9B70076FAF6 /* Payments */ = {
+			isa = PBXGroup;
+			children = (
+				3754DAF42C40F9D30076FAF6 /* PaymentProcessing.swift */,
+				3754DB232C40FEF00076FAF6 /* HippoPaymentsProcessor+PaymentProcessing.swift */,
+				3754DAF32C40F9D30076FAF6 /* PaymentProcessingProxy.swift */,
+			);
+			path = Payments;
+			sourceTree = "<group>";
+		};
+		3754DAFD2C40FA140076FAF6 /* HippoAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				3754DAFE2C40FA140076FAF6 /* HippoAnalytics.h */,
+				3754DAE02C40F8650076FAF6 /* HippoAnalyticsClient.swift */,
+			);
+			path = HippoAnalytics;
+			sourceTree = "<group>";
+		};
+		3754DB0E2C40FA310076FAF6 /* HippoPayments */ = {
+			isa = PBXGroup;
+			children = (
+				3754DB0F2C40FA310076FAF6 /* HippoPayments.h */,
+				3754DAE42C40F8660076FAF6 /* HippoPaymentsConfirmationViewController.swift */,
+				3754DAE52C40F8660076FAF6 /* HippoPaymentsError.swift */,
+				3754DAE62C40F8660076FAF6 /* HippoPaymentsProcessor.swift */,
+				3754DAE82C40F8660076FAF6 /* UIViewController+Presentation.swift */,
+			);
+			path = HippoPayments;
+			sourceTree = "<group>";
+		};
+		3754DB272C4102340076FAF6 /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3754DAF72C40FA140076FAF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3754DAFF2C40FA140076FAF6 /* HippoAnalytics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3754DB082C40FA310076FAF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3754DB102C40FA310076FAF6 /* HippoPayments.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3705AE092C3E4062006FB385 /* Albertos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3705AE2E2C3E4064006FB385 /* Build configuration list for PBXNativeTarget "Albertos" */;
+			buildPhases = (
+				3705AE062C3E4062006FB385 /* Sources */,
+				3705AE072C3E4062006FB385 /* Frameworks */,
+				3705AE082C3E4062006FB385 /* Resources */,
+				3754DB072C40FA140076FAF6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3754DB012C40FA140076FAF6 /* PBXTargetDependency */,
+				3754DB122C40FA310076FAF6 /* PBXTargetDependency */,
+			);
+			name = Albertos;
+			productName = Albertos;
+			productReference = 3705AE0A2C3E4062006FB385 /* Albertos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3705AE192C3E4064006FB385 /* AlbertosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3705AE312C3E4064006FB385 /* Build configuration list for PBXNativeTarget "AlbertosTests" */;
+			buildPhases = (
+				3705AE162C3E4064006FB385 /* Sources */,
+				3705AE172C3E4064006FB385 /* Frameworks */,
+				3705AE182C3E4064006FB385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3705AE1C2C3E4064006FB385 /* PBXTargetDependency */,
+			);
+			name = AlbertosTests;
+			productName = AlbertosTests;
+			productReference = 3705AE1A2C3E4064006FB385 /* AlbertosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3705AE232C3E4064006FB385 /* AlbertosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3705AE342C3E4064006FB385 /* Build configuration list for PBXNativeTarget "AlbertosUITests" */;
+			buildPhases = (
+				3705AE202C3E4064006FB385 /* Sources */,
+				3705AE212C3E4064006FB385 /* Frameworks */,
+				3705AE222C3E4064006FB385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3705AE262C3E4064006FB385 /* PBXTargetDependency */,
+			);
+			name = AlbertosUITests;
+			productName = AlbertosUITests;
+			productReference = 3705AE242C3E4064006FB385 /* AlbertosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3754DAFB2C40FA140076FAF6 /* HippoAnalytics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3754DB042C40FA140076FAF6 /* Build configuration list for PBXNativeTarget "HippoAnalytics" */;
+			buildPhases = (
+				3754DAF72C40FA140076FAF6 /* Headers */,
+				3754DAF82C40FA140076FAF6 /* Sources */,
+				3754DAF92C40FA140076FAF6 /* Frameworks */,
+				3754DAFA2C40FA140076FAF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HippoAnalytics;
+			productName = HippoAnalytics;
+			productReference = 3754DAFC2C40FA140076FAF6 /* HippoAnalytics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3754DB0C2C40FA310076FAF6 /* HippoPayments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3754DB152C40FA310076FAF6 /* Build configuration list for PBXNativeTarget "HippoPayments" */;
+			buildPhases = (
+				3754DB082C40FA310076FAF6 /* Headers */,
+				3754DB092C40FA310076FAF6 /* Sources */,
+				3754DB0A2C40FA310076FAF6 /* Frameworks */,
+				3754DB0B2C40FA310076FAF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HippoPayments;
+			productName = HippoPayments;
+			productReference = 3754DB0D2C40FA310076FAF6 /* HippoPayments.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3705AE022C3E4062006FB385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3705AE092C3E4062006FB385 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3705AE192C3E4064006FB385 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3705AE092C3E4062006FB385;
+					};
+					3705AE232C3E4064006FB385 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3705AE092C3E4062006FB385;
+					};
+					3754DAFB2C40FA140076FAF6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3754DB0C2C40FA310076FAF6 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 3705AE052C3E4062006FB385 /* Build configuration list for PBXProject "Albertos" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3705AE012C3E4062006FB385;
+			productRefGroup = 3705AE0B2C3E4062006FB385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3705AE092C3E4062006FB385 /* Albertos */,
+				3705AE192C3E4064006FB385 /* AlbertosTests */,
+				3705AE232C3E4064006FB385 /* AlbertosUITests */,
+				3754DAFB2C40FA140076FAF6 /* HippoAnalytics */,
+				3754DB0C2C40FA310076FAF6 /* HippoPayments */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3705AE082C3E4062006FB385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3705AE152C3E4063006FB385 /* Preview Assets.xcassets in Resources */,
+				3705AE122C3E4063006FB385 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3705AE182C3E4064006FB385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3707A7532C40B074006AC7C2 /* menu_item.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3705AE222C3E4064006FB385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3754DAFA2C40FA140076FAF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3754DB0B2C40FA310076FAF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3705AE062C3E4062006FB385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3754DB202C40FAE30076FAF6 /* OrderDetail.swift in Sources */,
+				3707A76B2C40E410006AC7C2 /* MenuItemDetail.swift in Sources */,
+				3707A7632C40CA7E006AC7C2 /* OrderController.swift in Sources */,
+				3707A7592C40BBC0006AC7C2 /* MenuFetcher.swift in Sources */,
+				3754DB262C40FF450076FAF6 /* Order+HippoPayments.swift in Sources */,
+				3754DB1F2C40FAE30076FAF6 /* OrderDetail.ViewModel.swift in Sources */,
+				372AB7742C3F77E7009C7758 /* MenuList.ViewModel.swift in Sources */,
+				3754DB222C40FB5A0076FAF6 /* Color+Custom.swift in Sources */,
+				3707A75D2C40C07B006AC7C2 /* URLSession+NetworkFetching.swift in Sources */,
+				3754DAF62C40F9D30076FAF6 /* PaymentProcessing.swift in Sources */,
+				3705AE382C3E42CE006FB385 /* MenuItem.swift in Sources */,
+				3754DADE2C40F7E40076FAF6 /* OrderButton.swift in Sources */,
+				3754DB2D2C4106CE0076FAF6 /* Alert.ViewModel.swift in Sources */,
+				372AB7762C3F9316009C7758 /* MenuFetching.swift in Sources */,
+				3707A75B2C40C00D006AC7C2 /* NetworkFetching.swift in Sources */,
+				3754DADD2C40F7E40076FAF6 /* OrderButton.ViewModel.swift in Sources */,
+				3754DAF52C40F9D30076FAF6 /* PaymentProcessingProxy.swift in Sources */,
+				3705AE102C3E4062006FB385 /* MenuList.swift in Sources */,
+				3705AE3A2C3E42EA006FB385 /* MenuSection.swift in Sources */,
+				372AB7702C3F6E28009C7758 /* MenuRow.ViewModel.swift in Sources */,
+				3705AE0E2C3E4062006FB385 /* AlbertosApp.swift in Sources */,
+				3707A7612C40C8E2006AC7C2 /* Order.swift in Sources */,
+				372AB76C2C3F6CC4009C7758 /* MenuRow.swift in Sources */,
+				3754DB242C40FEF00076FAF6 /* HippoPaymentsProcessor+PaymentProcessing.swift in Sources */,
+				3707A7672C40CF63006AC7C2 /* MenuItemDetail.ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3705AE162C3E4064006FB385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3754DB312C4109160076FAF6 /* XCTestCase+Timeouts.swift in Sources */,
+				3707A7572C40BB40006AC7C2 /* MenuFetcherTests.swift in Sources */,
+				3707A7552C40B2F1006AC7C2 /* XCTestCase+JSON.swift in Sources */,
+				3707A75F2C40C1DD006AC7C2 /* NetworkFetchingStub.swift in Sources */,
+				3754DB2F2C41085D0076FAF6 /* PaymentProcessingStub.swift in Sources */,
+				3707A7652C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift in Sources */,
+				372AB7682C3F6829009C7758 /* MenuSection+Fixture.swift in Sources */,
+				372AB7722C3F757D009C7758 /* MenuListViewModelTests.swift in Sources */,
+				372AB7642C3F5F79009C7758 /* Array+Safe.swift in Sources */,
+				372AB7662C3F5F9B009C7758 /* MenuItem+Fixture.swift in Sources */,
+				3754DB2B2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift in Sources */,
+				3754DACA2C40F1120076FAF6 /* OrderControllerTests.swift in Sources */,
+				372AB76E2C3F6D30009C7758 /* MenuRowViewModelTests.swift in Sources */,
+				3754DAC82C40F1070076FAF6 /* OrderTest.swift in Sources */,
+				3754DB292C41025E0076FAF6 /* PaymentProcessingSpy.swift in Sources */,
+				3707A7512C40AC48006AC7C2 /* MenuItemTests.swift in Sources */,
+				3705AE1F2C3E4064006FB385 /* MenuGroupingTests.swift in Sources */,
+				372AB77A2C3FA8D4009C7758 /* MenuFetchingStub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3705AE202C3E4064006FB385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3705AE2B2C3E4064006FB385 /* AlbertosUITestsLaunchTests.swift in Sources */,
+				3705AE292C3E4064006FB385 /* AlbertosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3754DAF82C40FA140076FAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3754DB1C2C40FA570076FAF6 /* HippoAnalyticsClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3754DB092C40FA310076FAF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3754DB1A2C40FA3E0076FAF6 /* HippoPaymentsProcessor.swift in Sources */,
+				3754DB182C40FA3E0076FAF6 /* HippoPaymentsError.swift in Sources */,
+				3754DB1B2C40FA3E0076FAF6 /* UIViewController+Presentation.swift in Sources */,
+				3754DB192C40FA3E0076FAF6 /* HippoPaymentsConfirmationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3705AE1C2C3E4064006FB385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3705AE092C3E4062006FB385 /* Albertos */;
+			targetProxy = 3705AE1B2C3E4064006FB385 /* PBXContainerItemProxy */;
+		};
+		3705AE262C3E4064006FB385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3705AE092C3E4062006FB385 /* Albertos */;
+			targetProxy = 3705AE252C3E4064006FB385 /* PBXContainerItemProxy */;
+		};
+		3754DB012C40FA140076FAF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3754DAFB2C40FA140076FAF6 /* HippoAnalytics */;
+			targetProxy = 3754DB002C40FA140076FAF6 /* PBXContainerItemProxy */;
+		};
+		3754DB122C40FA310076FAF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3754DB0C2C40FA310076FAF6 /* HippoPayments */;
+			targetProxy = 3754DB112C40FA310076FAF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3705AE2C2C3E4064006FB385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3705AE2D2C3E4064006FB385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3705AE2F2C3E4064006FB385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Albertos/Preview Content\"";
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Albertos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3705AE302C3E4064006FB385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Albertos/Preview Content\"";
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.Albertos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3705AE322C3E4064006FB385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.AlbertosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Albertos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Albertos";
+			};
+			name = Debug;
+		};
+		3705AE332C3E4064006FB385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.AlbertosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Albertos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Albertos";
+			};
+			name = Release;
+		};
+		3705AE352C3E4064006FB385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.AlbertosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Albertos;
+			};
+			name = Debug;
+		};
+		3705AE362C3E4064006FB385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.AlbertosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Albertos;
+			};
+			name = Release;
+		};
+		3754DB052C40FA140076FAF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.HippoAnalytics;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3754DB062C40FA140076FAF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.HippoAnalytics;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3754DB162C40FA310076FAF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.HippoPayments;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3754DB172C40FA310076FAF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 59FP2PXRXK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.codegrove.HippoPayments;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3705AE052C3E4062006FB385 /* Build configuration list for PBXProject "Albertos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3705AE2C2C3E4064006FB385 /* Debug */,
+				3705AE2D2C3E4064006FB385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3705AE2E2C3E4064006FB385 /* Build configuration list for PBXNativeTarget "Albertos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3705AE2F2C3E4064006FB385 /* Debug */,
+				3705AE302C3E4064006FB385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3705AE312C3E4064006FB385 /* Build configuration list for PBXNativeTarget "AlbertosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3705AE322C3E4064006FB385 /* Debug */,
+				3705AE332C3E4064006FB385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3705AE342C3E4064006FB385 /* Build configuration list for PBXNativeTarget "AlbertosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3705AE352C3E4064006FB385 /* Debug */,
+				3705AE362C3E4064006FB385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3754DB042C40FA140076FAF6 /* Build configuration list for PBXNativeTarget "HippoAnalytics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3754DB052C40FA140076FAF6 /* Debug */,
+				3754DB062C40FA140076FAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3754DB152C40FA310076FAF6 /* Build configuration list for PBXNativeTarget "HippoPayments" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3754DB162C40FA310076FAF6 /* Debug */,
+				3754DB172C40FA310076FAF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3705AE022C3E4062006FB385 /* Project object */;
+}
